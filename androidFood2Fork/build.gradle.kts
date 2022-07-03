@@ -66,10 +66,11 @@ dependencies {
     kapt(Hilt.hiltCompiler)
 
     implementation(Kotlinx.datetime)
-    testImplementation(Tests.junit)
+    implementation(Ktor.android)
 
-    androidTestImplementation(Tests.junitExt)
     androidTestImplementation(Tests.espresso)
+    testImplementation(Tests.junit)
+    androidTestImplementation(Tests.junitExt)
 
     debugImplementation(SquareUp.leakCanary)
 }
