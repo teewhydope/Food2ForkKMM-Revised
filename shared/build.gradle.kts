@@ -27,15 +27,17 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Ktor.core)
+                implementation(Kotlinx.datetime)
+                implementation(Ktor.auth)
                 implementation(Ktor.clientSerialization)
-                implementation(Ktor.ktorContentNegotiation)
+                implementation(Ktor.contentNegotiation)
+                implementation(Ktor.core)
+                implementation(Ktor.logging)
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
-                implementation(Kotlinx.datetime)
             }
         }
         val androidMain by getting {

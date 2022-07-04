@@ -1,4 +1,4 @@
-package com.teewhy.food2forkkmm.android.di
+package com.teewhy.food2forkkmm.android.di.app
 
 import android.content.Context
 import com.teewhy.food2forkkmm.android.BaseApplication
