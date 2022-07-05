@@ -4,6 +4,7 @@ plugins {
     kotlin(KotlinPlugins.serialization) version Kotlin.version
     id(Plugins.androidLibrary)
     id(Plugins.sqlDelight)
+    id(Plugins.mokoKswift)
 }
 
 version = "1.0"
@@ -17,22 +18,28 @@ kotlin {
     cocoapods {
         summary = "Some description for the Shared Module"
         homepage = "Link to the Shared Module homepage"
-        ios.deploymentTarget = "14.1"
+        ios.deploymentTarget = "15.0"
         podfile = project.file("../iosFood2Fork/Podfile")
         framework {
-            baseName = "shared"
+            baseName = "MultiPlatformLibrary"
+            isStatic = false
+
+            export(Moko.mvvmCore)
+            export(Moko.mvvmFlow)
         }
     }
 
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Kotlinx.datetime)
                 implementation(Ktor.auth)
                 implementation(Ktor.clientSerialization)
                 implementation(Ktor.contentNegotiation)
                 implementation(Ktor.core)
                 implementation(Ktor.logging)
+
+                api(Moko.mvvmCore)
+                api(Moko.mvvmFlow)
             }
         }
         val commonTest by getting {
@@ -43,6 +50,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(Ktor.android)
+                api(Moko.mvvmFlowCompose)
             }
         }
         val androidTest by getting
@@ -87,4 +95,8 @@ android {
         create("testDebugApi")
         create("testReleaseApi")
     }
+}
+
+kswift {
+    install(dev.icerock.moko.kswift.plugin.feature.SealedToSwiftEnumFeature)
 }

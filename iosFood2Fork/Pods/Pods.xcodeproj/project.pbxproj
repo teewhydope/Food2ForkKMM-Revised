@@ -3,15 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		3C5647B399E506357801D92C13B5F1E1 /* mokoMvvmFlowSwiftUI */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B643D250DD447F050C64353356F54BD4 /* Build configuration list for PBXAggregateTarget "mokoMvvmFlowSwiftUI" */;
+			buildPhases = (
+				E2A8337A6AE86F2F963F21FA3CEB400A /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = mokoMvvmFlowSwiftUI;
+		};
 		8777C9F6889E59EFFD631D80AEE9048B /* shared */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4A85E56EFB3170251B1CB14EB8485EF5 /* Build configuration list for PBXAggregateTarget "shared" */;
+			buildConfigurationList = 9FAF69EFFAE27522789F3CA719BA83DE /* Build configuration list for PBXAggregateTarget "shared" */;
 			buildPhases = (
-				179B9B8F4A300C109F0453B82420AE1B /* [CP-User] Build shared */,
+				4552119A071AC6BAB7327E6434237EC3 /* [CP-User] Build shared */,
 			);
 			dependencies = (
 			);
@@ -20,45 +30,57 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		7A66B06A1C941081D7FB4E49F042A070 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A3505555D3BBBB8706DD55F7C437A064 /* Pods-iosFood2Fork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BD39A4BBC6F9A462D0340FDB4889CA /* Pods-iosFood2Fork-dummy.m */; };
-		F3C30F724EA44B7D351923C89F55AB64 /* Pods-iosFood2Fork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F082C8D432DE898F62D85D24E4D361 /* Pods-iosFood2Fork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798D0584D8813C6F15EFC0BC6EADB8B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4971881916D548DDC3127150395798B /* Pods-iosFood2Fork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B71030FBE6AEAA5401E2925CE3C11F /* Pods-iosFood2Fork-dummy.m */; };
+		D6D032F65171C04FB4A9AE8DDD0E9B3D /* Pods-iosFood2Fork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C42102556C60A00B6C42B6F469983CA2 /* Pods-iosFood2Fork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B0F9549047038F1654B710A6DC0B942 /* PBXContainerItemProxy */ = {
+		AC1F46A9B2FD29953AF41F5366266D2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8777C9F6889E59EFFD631D80AEE9048B;
 			remoteInfo = shared;
 		};
+		C0770C5FB08990894A3432A45ABE5D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5647B399E506357801D92C13B5F1E1;
+			remoteInfo = mokoMvvmFlowSwiftUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04DCC3398625BF7735E7275F3AAD7783 /* Pods-iosFood2Fork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosFood2Fork-Info.plist"; sourceTree = "<group>"; };
-		4F99B18668864F373F2881328ADC99C6 /* Pods-iosFood2Fork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosFood2Fork.modulemap"; sourceTree = "<group>"; };
-		57F8ABB8924214330FCF7BEB07AE4BEB /* Pods-iosFood2Fork-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosFood2Fork-acknowledgements.plist"; sourceTree = "<group>"; };
-		66A1B233F0EA7EE3258D4B57C79AFF5F /* Pods-iosFood2Fork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosFood2Fork.debug.xcconfig"; sourceTree = "<group>"; };
+		18D3D100B338A428E3570B89B39EABF2 /* mokoMvvmFlowSwiftUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = mokoMvvmFlowSwiftUI.xcframework; sourceTree = "<group>"; };
+		34B4193A6A32A90486F795AFC9F465CB /* mokoMvvmFlowSwiftUI-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "mokoMvvmFlowSwiftUI-xcframeworks.sh"; sourceTree = "<group>"; };
+		37A4DE307ED8151CD0DEC2464E730F5D /* Pods-iosFood2Fork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosFood2Fork.release.xcconfig"; sourceTree = "<group>"; };
+		41EE42C04967341DA5E85FF54575C14E /* mokoMvvmFlowSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mokoMvvmFlowSwiftUI.debug.xcconfig; sourceTree = "<group>"; };
+		446C05FDE8F6ABD2595590940D9EFA84 /* Pods-iosFood2Fork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosFood2Fork.debug.xcconfig"; sourceTree = "<group>"; };
+		5513491F9E1A0019AECC94980E05BA49 /* MultiPlatformLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultiPlatformLibrary.framework; path = build/cocoapods/framework/MultiPlatformLibrary.framework; sourceTree = "<group>"; };
+		63EE578D0E4824A391FBECE8808E138C /* Pods-iosFood2Fork-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iosFood2Fork-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76EDD588D9AC7861B33318137ED75325 /* Pods-iosFood2Fork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosFood2Fork-Info.plist"; sourceTree = "<group>"; };
 		8EEC7D19DC659BA1BA5F4D36C7C3E572 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97182D15D6857A68A9AE32D7A34F1661 /* Pods-iosFood2Fork */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iosFood2Fork"; path = Pods_iosFood2Fork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1F082C8D432DE898F62D85D24E4D361 /* Pods-iosFood2Fork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosFood2Fork-umbrella.h"; sourceTree = "<group>"; };
-		B1FB2F3C39C72350AB2A661C3FC9B082 /* Pods-iosFood2Fork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosFood2Fork.release.xcconfig"; sourceTree = "<group>"; };
+		B2E03F8BD25FE03700C1A1872CC88FC2 /* Pods-iosFood2Fork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosFood2Fork.modulemap"; sourceTree = "<group>"; };
 		B34BE5C5BA69C336E915FC8011CC0AC3 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		D1377CD0686EB2DFF398853B6632DD7C /* Pods-iosFood2Fork-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iosFood2Fork-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6C3E81743B4F82A63C908F8B911AC96 /* mokoMvvmFlowSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mokoMvvmFlowSwiftUI.release.xcconfig; sourceTree = "<group>"; };
+		C42102556C60A00B6C42B6F469983CA2 /* Pods-iosFood2Fork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosFood2Fork-umbrella.h"; sourceTree = "<group>"; };
+		C9EEF63A881DC2620AC902674422173F /* Pods-iosFood2Fork-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosFood2Fork-acknowledgements.plist"; sourceTree = "<group>"; };
 		E288A42FCA6973CB35B18FA55E8C3EED /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
-		E9BD39A4BBC6F9A462D0340FDB4889CA /* Pods-iosFood2Fork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosFood2Fork-dummy.m"; sourceTree = "<group>"; };
-		F30E007430583536A889365E808E99C1 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
+		E4040C602009CB983309F21E1D8E2BF6 /* Pods-iosFood2Fork-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iosFood2Fork-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8B71030FBE6AEAA5401E2925CE3C11F /* Pods-iosFood2Fork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosFood2Fork-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DBF33DFB025221BA5618E2AFEFCF69B /* Frameworks */ = {
+		7DC08B1D8E854642C4F5B5400D803F1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A66B06A1C941081D7FB4E49F042A070 /* Foundation.framework in Frameworks */,
+				798D0584D8813C6F15EFC0BC6EADB8B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +95,31 @@
 			);
 			name = "Support Files";
 			path = "../iosFood2Fork/Pods/Target Support Files/shared";
+			sourceTree = "<group>";
+		};
+		10797E5ED6EAB7562B35620A7D4B2E90 /* Pods-iosFood2Fork */ = {
+			isa = PBXGroup;
+			children = (
+				B2E03F8BD25FE03700C1A1872CC88FC2 /* Pods-iosFood2Fork.modulemap */,
+				E4040C602009CB983309F21E1D8E2BF6 /* Pods-iosFood2Fork-acknowledgements.markdown */,
+				C9EEF63A881DC2620AC902674422173F /* Pods-iosFood2Fork-acknowledgements.plist */,
+				F8B71030FBE6AEAA5401E2925CE3C11F /* Pods-iosFood2Fork-dummy.m */,
+				63EE578D0E4824A391FBECE8808E138C /* Pods-iosFood2Fork-frameworks.sh */,
+				76EDD588D9AC7861B33318137ED75325 /* Pods-iosFood2Fork-Info.plist */,
+				C42102556C60A00B6C42B6F469983CA2 /* Pods-iosFood2Fork-umbrella.h */,
+				446C05FDE8F6ABD2595590940D9EFA84 /* Pods-iosFood2Fork.debug.xcconfig */,
+				37A4DE307ED8151CD0DEC2464E730F5D /* Pods-iosFood2Fork.release.xcconfig */,
+			);
+			name = "Pods-iosFood2Fork";
+			path = "Target Support Files/Pods-iosFood2Fork";
+			sourceTree = "<group>";
+		};
+		16395C8391FF16F84A3E4EE424A94320 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				10797E5ED6EAB7562B35620A7D4B2E90 /* Pods-iosFood2Fork */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		1F29D65928461C0B5E071B646039491C /* Pod */ = {
@@ -91,12 +138,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		342EF09E77851143B99B1DE123BA8972 /* Frameworks */ = {
+		528C102979F3C15093BE1295A00F0FC7 /* mokoMvvmFlowSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F30E007430583536A889365E808E99C1 /* shared.framework */,
+				AE8B3279D76099BB683580FFADD4FC54 /* Frameworks */,
+				F6795DC75B551141D0014EBC35238489 /* Support Files */,
 			);
-			name = Frameworks;
+			name = mokoMvvmFlowSwiftUI;
+			path = mokoMvvmFlowSwiftUI;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -105,30 +154,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5AF1441CCAED833A56A6C5826334EF64 /* Pods-iosFood2Fork */ = {
-			isa = PBXGroup;
-			children = (
-				4F99B18668864F373F2881328ADC99C6 /* Pods-iosFood2Fork.modulemap */,
-				D1377CD0686EB2DFF398853B6632DD7C /* Pods-iosFood2Fork-acknowledgements.markdown */,
-				57F8ABB8924214330FCF7BEB07AE4BEB /* Pods-iosFood2Fork-acknowledgements.plist */,
-				E9BD39A4BBC6F9A462D0340FDB4889CA /* Pods-iosFood2Fork-dummy.m */,
-				04DCC3398625BF7735E7275F3AAD7783 /* Pods-iosFood2Fork-Info.plist */,
-				A1F082C8D432DE898F62D85D24E4D361 /* Pods-iosFood2Fork-umbrella.h */,
-				66A1B233F0EA7EE3258D4B57C79AFF5F /* Pods-iosFood2Fork.debug.xcconfig */,
-				B1FB2F3C39C72350AB2A661C3FC9B082 /* Pods-iosFood2Fork.release.xcconfig */,
-			);
-			name = "Pods-iosFood2Fork";
-			path = "Target Support Files/Pods-iosFood2Fork";
-			sourceTree = "<group>";
-		};
-		63FD509960EC1E6F69588DFAC2824CD7 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5AF1441CCAED833A56A6C5826334EF64 /* Pods-iosFood2Fork */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7354EB0FC1AAB61757EBA9B46D16437E /* Products */ = {
@@ -142,12 +167,28 @@
 		ACFBCBE502FE3797D73C7AA98B366426 /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				342EF09E77851143B99B1DE123BA8972 /* Frameworks */,
+				E1E4C27174C2C2B1AD5E0EA07B9BD4CF /* Frameworks */,
 				1F29D65928461C0B5E071B646039491C /* Pod */,
 				07F2659917038B8173900C018D502DE0 /* Support Files */,
 			);
 			name = shared;
 			path = ../../shared;
+			sourceTree = "<group>";
+		};
+		AE8B3279D76099BB683580FFADD4FC54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18D3D100B338A428E3570B89B39EABF2 /* mokoMvvmFlowSwiftUI.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B064B6952C427BE2341264ECAF4A212E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				528C102979F3C15093BE1295A00F0FC7 /* mokoMvvmFlowSwiftUI */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -156,8 +197,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B064B6952C427BE2341264ECAF4A212E /* Pods */,
 				7354EB0FC1AAB61757EBA9B46D16437E /* Products */,
-				63FD509960EC1E6F69588DFAC2824CD7 /* Targets Support Files */,
+				16395C8391FF16F84A3E4EE424A94320 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,14 +211,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E1E4C27174C2C2B1AD5E0EA07B9BD4CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5513491F9E1A0019AECC94980E05BA49 /* MultiPlatformLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6795DC75B551141D0014EBC35238489 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34B4193A6A32A90486F795AFC9F465CB /* mokoMvvmFlowSwiftUI-xcframeworks.sh */,
+				41EE42C04967341DA5E85FF54575C14E /* mokoMvvmFlowSwiftUI.debug.xcconfig */,
+				B6C3E81743B4F82A63C908F8B911AC96 /* mokoMvvmFlowSwiftUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/mokoMvvmFlowSwiftUI";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D3252E35BB99DBE37C3E1950D40CD98B /* Headers */ = {
+		C4CA289401D00F0F9750A87CCC8EEF7E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C30F724EA44B7D351923C89F55AB64 /* Pods-iosFood2Fork-umbrella.h in Headers */,
+				D6D032F65171C04FB4A9AE8DDD0E9B3D /* Pods-iosFood2Fork-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,17 +246,18 @@
 /* Begin PBXNativeTarget section */
 		A53CFDA4EE4DB83DE3BC4983CA81086C /* Pods-iosFood2Fork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 258FF6835E4D127161747704494C497D /* Build configuration list for PBXNativeTarget "Pods-iosFood2Fork" */;
+			buildConfigurationList = 53B5E5A839C4AB1A6645460B20A2C9B4 /* Build configuration list for PBXNativeTarget "Pods-iosFood2Fork" */;
 			buildPhases = (
-				D3252E35BB99DBE37C3E1950D40CD98B /* Headers */,
-				CE6DAA4C9A85E7DE9A46572DB61A2050 /* Sources */,
-				8DBF33DFB025221BA5618E2AFEFCF69B /* Frameworks */,
-				6D7AFB7B127E1424E6FD30EFF6E06682 /* Resources */,
+				C4CA289401D00F0F9750A87CCC8EEF7E /* Headers */,
+				4B1A9C0C33DBED70EDB3CF6E2FEA3A05 /* Sources */,
+				7DC08B1D8E854642C4F5B5400D803F1B /* Frameworks */,
+				C0694B7B07F28A1238E2F8C47845A1E3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A460CA3D39D12C2EE13308938B0166B7 /* PBXTargetDependency */,
+				EACEF3C2A8793CA0925C8A8EB75D5C29 /* PBXTargetDependency */,
+				44FC199B396185607344C783863C415F /* PBXTargetDependency */,
 			);
 			name = "Pods-iosFood2Fork";
 			productName = Pods_iosFood2Fork;
@@ -212,7 +274,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -224,6 +286,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3C5647B399E506357801D92C13B5F1E1 /* mokoMvvmFlowSwiftUI */,
 				A53CFDA4EE4DB83DE3BC4983CA81086C /* Pods-iosFood2Fork */,
 				8777C9F6889E59EFFD631D80AEE9048B /* shared */,
 			);
@@ -231,7 +294,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6D7AFB7B127E1424E6FD30EFF6E06682 /* Resources */ = {
+		C0694B7B07F28A1238E2F8C47845A1E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +304,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		179B9B8F4A300C109F0453B82420AE1B /* [CP-User] Build shared */ = {
+		4552119A071AC6BAB7327E6434237EC3 /* [CP-User] Build shared */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,39 +312,80 @@
 			name = "[CP-User] Build shared";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+			shellScript = "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION\n";
+		};
+		E2A8337A6AE86F2F963F21FA3CEB400A /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/mokoMvvmFlowSwiftUI/mokoMvvmFlowSwiftUI-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/mokoMvvmFlowSwiftUI/mokoMvvmFlowSwiftUI-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/mokoMvvmFlowSwiftUI/mokoMvvmFlowSwiftUI-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE6DAA4C9A85E7DE9A46572DB61A2050 /* Sources */ = {
+		4B1A9C0C33DBED70EDB3CF6E2FEA3A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3505555D3BBBB8706DD55F7C437A064 /* Pods-iosFood2Fork-dummy.m in Sources */,
+				C4971881916D548DDC3127150395798B /* Pods-iosFood2Fork-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A460CA3D39D12C2EE13308938B0166B7 /* PBXTargetDependency */ = {
+		44FC199B396185607344C783863C415F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 7B0F9549047038F1654B710A6DC0B942 /* PBXContainerItemProxy */;
+			targetProxy = AC1F46A9B2FD29953AF41F5366266D2B /* PBXContainerItemProxy */;
+		};
+		EACEF3C2A8793CA0925C8A8EB75D5C29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mokoMvvmFlowSwiftUI;
+			target = 3C5647B399E506357801D92C13B5F1E1 /* mokoMvvmFlowSwiftUI */;
+			targetProxy = C0770C5FB08990894A3432A45ABE5D2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3066F7A489148C939EF53B3A8E6B8340 /* Debug */ = {
+		1430637AB8FF604E67B183821CF3F869 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E288A42FCA6973CB35B18FA55E8C3EED /* shared.debug.xcconfig */;
+			baseConfigurationReference = B34BE5C5BA69C336E915FC8011CC0AC3 /* shared.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D76771FA73F308DD4557F91E6E26AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EE42C04967341DA5E85FF54575C14E /* mokoMvvmFlowSwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,69 +395,63 @@
 			};
 			name = Debug;
 		};
-		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
+		855A2705C788AE0AD38D9942C9279836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A4DE307ED8151CD0DEC2464E730F5D /* Pods-iosFood2Fork.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iosFood2Fork/Pods-iosFood2Fork-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iosFood2Fork/Pods-iosFood2Fork.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
+		8B07B4A58906BDB6850C805DF0D899BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C3E81743B4F82A63C908F8B911AC96 /* mokoMvvmFlowSwiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -419,9 +517,88 @@
 			};
 			name = Debug;
 		};
-		BE66C22D1552272A020A56C38D32AF79 /* Debug */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A1B233F0EA7EE3258D4B57C79AFF5F /* Pods-iosFood2Fork.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		97B4B05B80647D6D24C00BC71C1F092D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E288A42FCA6973CB35B18FA55E8C3EED /* shared.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEA2F466ECB89F86C63D9B83DA97BAB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446C05FDE8F6ABD2595590940D9EFA84 /* Pods-iosFood2Fork.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -435,7 +612,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-iosFood2Fork/Pods-iosFood2Fork-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,88 +633,41 @@
 			};
 			name = Debug;
 		};
-		CB19B582990BFAF5DB94DC6DB89853A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B34BE5C5BA69C336E915FC8011CC0AC3 /* shared.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D04ECF1B22D757A2E7A6EFC2BB215D5A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1FB2F3C39C72350AB2A661C3FC9B082 /* Pods-iosFood2Fork.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iosFood2Fork/Pods-iosFood2Fork-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iosFood2Fork/Pods-iosFood2Fork.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		258FF6835E4D127161747704494C497D /* Build configuration list for PBXNativeTarget "Pods-iosFood2Fork" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE66C22D1552272A020A56C38D32AF79 /* Debug */,
-				D04ECF1B22D757A2E7A6EFC2BB215D5A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
-				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A85E56EFB3170251B1CB14EB8485EF5 /* Build configuration list for PBXAggregateTarget "shared" */ = {
+		53B5E5A839C4AB1A6645460B20A2C9B4 /* Build configuration list for PBXNativeTarget "Pods-iosFood2Fork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3066F7A489148C939EF53B3A8E6B8340 /* Debug */,
-				CB19B582990BFAF5DB94DC6DB89853A9 /* Release */,
+				AEA2F466ECB89F86C63D9B83DA97BAB5 /* Debug */,
+				855A2705C788AE0AD38D9942C9279836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FAF69EFFAE27522789F3CA719BA83DE /* Build configuration list for PBXAggregateTarget "shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B4B05B80647D6D24C00BC71C1F092D /* Debug */,
+				1430637AB8FF604E67B183821CF3F869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B643D250DD447F050C64353356F54BD4 /* Build configuration list for PBXAggregateTarget "mokoMvvmFlowSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D76771FA73F308DD4557F91E6E26AA8 /* Debug */,
+				8B07B4A58906BDB6850C805DF0D899BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
