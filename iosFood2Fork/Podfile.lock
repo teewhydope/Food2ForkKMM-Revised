@@ -1,16 +1,21 @@
 PODS:
+  - mokoMvvmFlowSwiftUI (0.13.0)
   - shared (1.0)
 
 DEPENDENCIES:
+  - mokoMvvmFlowSwiftUI (from `https://raw.githubusercontent.com/icerockdev/moko-mvvm/release/0.13.0/mokoMvvmFlowSwiftUI.podspec`)
   - shared (from `../shared`)
 
 EXTERNAL SOURCES:
+  mokoMvvmFlowSwiftUI:
+    :podspec: https://raw.githubusercontent.com/icerockdev/moko-mvvm/release/0.13.0/mokoMvvmFlowSwiftUI.podspec
   shared:
     :path: "../shared"
 
 SPEC CHECKSUMS:
-  shared: 07cac7993e4f05eda6b76f3a213b070947c3b79f
+  mokoMvvmFlowSwiftUI: 64572433b11ad2512ddc16141fc64cf8b958c675
+  shared: bf905616148459e54532de32c0603295c33e665b
 
-PODFILE CHECKSUM: ffb73cf26a6848843cfc3b9f40bce8bb48bf152d
+PODFILE CHECKSUM: 2912cb755a870e1685c66d10f70973e4bc300991
 
 COCOAPODS: 1.11.3

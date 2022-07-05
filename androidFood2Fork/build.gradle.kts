@@ -34,7 +34,7 @@ android {
         jvmTarget = "11"
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Compose.composeCompilerVersion
+        kotlinCompilerExtensionVersion = Compose.composeVersion
     }
 }
 
@@ -48,6 +48,7 @@ dependencies {
 
     implementation(AndroidX.appCompat)
 
+    implementation(Compose.activity)
     implementation(Compose.runtime)
     implementation(Compose.runtimeLiveData)
     implementation(Compose.ui)
@@ -56,8 +57,8 @@ dependencies {
     implementation(Compose.foundation)
     implementation(Compose.compiler)
     implementation(Compose.constraintLayout)
-    implementation(Compose.activity)
     implementation(Compose.navigation)
+    implementation(Compose.viewmodel)
 
     implementation(Google.material)
 

@@ -1,11 +1,16 @@
 import SwiftUI
-import shared
+import MultiPlatformLibrary
+import mokoMvvmFlowSwiftUI
 
 struct ContentView: View {
-	let greet = Greeting().greeting()
-
+    @ObservedObject var viewModel = RecipeListViewModel()
+    
+    var textString: String {
+        return viewModel.textValue.value as! String
+       }
+    
 	var body: some View {
-		Text(greet)
+        Text(textString)
 	}
 }
 
