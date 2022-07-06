@@ -1,5 +1,5 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../shared/build/cocoapods/framework" "${PODS_ROOT}/mokoMvvmFlowSwiftUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/mokoMvvmFlowSwiftUI"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../common/build/cocoapods/framework" "${PODS_ROOT}/mokoMvvmFlowSwiftUI" "${PODS_XCFRAMEWORKS_BUILD_DIR}/mokoMvvmFlowSwiftUI"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -l"c++" -framework "MultiPlatformLibrary" -framework "mokoMvvmFlowSwiftUI"

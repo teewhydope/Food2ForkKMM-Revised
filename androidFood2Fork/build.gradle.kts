@@ -44,7 +44,7 @@ kapt {
 }
 
 dependencies {
-    implementation(project(":shared"))
+    implementation(project(":common"))
 
     implementation(AndroidX.appCompat)
 

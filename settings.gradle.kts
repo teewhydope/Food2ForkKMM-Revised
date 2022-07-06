@@ -8,4 +8,4 @@ pluginManagement {
 
 rootProject.name = "Food2ForkKMM"
 include(":androidFood2Fork")
-include(":shared")
+include(":common")
