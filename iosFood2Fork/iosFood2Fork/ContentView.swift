@@ -3,19 +3,25 @@ import MultiPlatformLibrary
 import mokoMvvmFlowSwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = RecipeListViewModel()
+    @StateObject var viewModel: RecipeListViewModel = RecipeListViewModel()
     
-    var textString: String {
-        return viewModel.textValue.value as! String
-       }
+    var body: some View {
+        if viewModel.state(\.isLoading) {
+            ProgressView()
+        } else {
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.state(\.recipeList) as [RecipePresentationModel], id: \.self) { recipe in
+                        Text(recipe.title)
+                    }
+                }
+            }
+        }
+    }
+}
     
-	var body: some View {
-        Text(textString)
-	}
-}
-
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
-}
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }

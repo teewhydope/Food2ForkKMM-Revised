@@ -7,12 +7,15 @@ buildscript {
         maven("https://jitpack.io")
     }
     dependencies {
-        classpath(Build.kotlinGradlePlugin)
-        classpath(Build.buildTools)
-        classpath(Build.sqlDelightGradlePlugin)
-        classpath(Build.hiltGradlePlugin)
-        classpath(Build.remalGradlePlugin)
-        classpath(Build.mokoKSwiftGradlePlugin)
+
+        with(Build) {
+            classpath(kotlinGradlePlugin)
+            classpath(buildTools)
+            classpath(sqlDelightGradlePlugin)
+            classpath(hiltGradlePlugin)
+            classpath(remalGradlePlugin)
+            classpath(mokoKSwiftGradlePlugin)
+        }
     }
 }
 

@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>mokoMvvmFlowSwiftUI.xcscheme</key>
+		<key>common.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>shared.xcscheme</key>
+		<key>mokoMvvmFlowSwiftUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
