@@ -6,7 +6,7 @@
    
    SqlDelight for caching
    
-   Multiplatform DI injection
+   Multiplatform DI injection (PopKorn)
    
    Ktor for networking
         
