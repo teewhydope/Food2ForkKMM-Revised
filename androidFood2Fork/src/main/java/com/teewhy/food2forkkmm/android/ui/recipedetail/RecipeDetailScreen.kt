@@ -1,4 +1,4 @@
-package com.teewhy.food2forkkmm.android.ui.recipe_detail
+package com.teewhy.food2forkkmm.android.ui.recipedetail
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable

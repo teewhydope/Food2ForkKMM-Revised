@@ -1,11 +1,14 @@
 package com.teewhy.food2forkkmm.data.recipelist.datasource.remote
 
+import cc.popkorn.annotations.Injectable
+import cc.popkorn.core.Scope
 import com.teewhy.food2forkkmm.data.recipedetail.mapper.RecipeApiToDataMapper
 import com.teewhy.food2forkkmm.data.recipedetail.model.RecipeDataModel
 import com.teewhy.food2forkkmm.data.recipelist.mapper.RecipeListApiToDataMapper
 import com.teewhy.food2forkkmm.data.recipelist.mapper.RecipeListApiToDataMapper.MapperInput
 import com.teewhy.food2forkkmm.data.recipelist.model.RecipeListDataModel
 
+@Injectable(Scope.BY_USE)
 class RecipeListRemoteDataSource(
     private val recipeListService: RecipeListService,
     private val recipeApiToDataMapper: RecipeApiToDataMapper,

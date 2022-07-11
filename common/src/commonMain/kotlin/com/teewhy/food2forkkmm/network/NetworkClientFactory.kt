@@ -1,5 +1,7 @@
 package com.teewhy.food2forkkmm.network
 
+import cc.popkorn.annotations.InjectableProvider
+import com.teewhy.food2forkkmm.base.BaseApi
 import com.teewhy.food2forkkmm.base.BaseApi.Companion.EMPTY_STRING
 import com.teewhy.food2forkkmm.base.BaseApi.Companion.TOKEN
 import io.ktor.client.HttpClient
@@ -14,7 +16,8 @@ import kotlinx.serialization.json.Json
 
 expect val httpClientEngineConfig: HttpClientEngineFactory<HttpClientEngineConfig>
 
-class NetworkClientFactory() {
+@InjectableProvider
+class NetworkClientFactory {
     fun build(): HttpClient {
         return HttpClient(httpClientEngineConfig) {
             install(ContentNegotiation) {
@@ -32,5 +35,9 @@ class NetworkClientFactory() {
                 }
             }
         }
+    }
+
+    companion object {
+        val baseUrl = BaseApi.BASE_URL
     }
 }

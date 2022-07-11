@@ -1,4 +1,4 @@
-package com.teewhy.food2forkkmm.android.ui.recipe_list
+package com.teewhy.food2forkkmm.android.ui.recipelist
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -18,7 +18,7 @@ import com.teewhy.food2forkkmm.presentation.recipelist.RecipeListViewModel
 @Composable
 fun RecipeListScreen(
     onSelectedRecipe: (Int) -> Unit,
-    viewModel: RecipeListViewModel = viewModel(),
+    viewModel: RecipeListViewModel = viewModel()
 ) {
     val isLoading: Boolean by viewModel.isLoading.collectAsState()
     if (isLoading) {

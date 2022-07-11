@@ -1,8 +1,11 @@
 package com.teewhy.food2forkkmm.presentation.recipelist
 
-import com.teewhy.food2forkkmm.di.recipelist.RecipeListDomainModule
-import com.teewhy.food2forkkmm.di.recipelist.RecipeListPresentationModule
+import cc.popkorn.annotations.Injectable
+import cc.popkorn.core.Scope
+import cc.popkorn.inject
+import com.teewhy.food2forkkmm.base.BaseUseCaseExecutor
 import com.teewhy.food2forkkmm.domain.model.RecipeListRequestDomainModel
+import com.teewhy.food2forkkmm.domain.usecase.GetRecipeListUseCase
 import com.teewhy.food2forkkmm.presentation.recipedetail.mapper.RecipeDomainToPresentationMapper
 import com.teewhy.food2forkkmm.presentation.recipedetail.model.RecipePresentationModel
 import com.teewhy.food2forkkmm.presentation.recipelist.mapper.RecipeListDomainToPresentationMapper
@@ -12,9 +15,10 @@ import dev.icerock.moko.mvvm.flow.cStateFlow
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 
+@Injectable(Scope.BY_NEW)
 class RecipeListViewModel : ViewModel() {
-    private val recipeListPresentationDi = RecipeListPresentationModule()
-    private val recipeListDomainDi = RecipeListDomainModule()
+    private val useCaseExecutor = inject<BaseUseCaseExecutor>()
+    private val getRecipeListUseCase = inject<GetRecipeListUseCase>()
     private val recipeDomainToPresentationMapper = RecipeDomainToPresentationMapper()
     private val recipeListDomainToPresentationMapper = RecipeListDomainToPresentationMapper()
 
@@ -31,8 +35,8 @@ class RecipeListViewModel : ViewModel() {
 
     private fun getRecipeList() {
         _isLoading.value = true
-        recipeListPresentationDi.providesUseCaseExecutor().execute(
-            useCase = recipeListDomainDi.providesGetRecipeListUseCase(),
+        useCaseExecutor.execute(
+            useCase = getRecipeListUseCase,
             value = RecipeListRequestDomainModel(
                 page = 1,
                 query = ""

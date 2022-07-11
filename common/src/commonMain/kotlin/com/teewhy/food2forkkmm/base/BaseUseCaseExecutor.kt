@@ -1,14 +1,17 @@
 package com.teewhy.food2forkkmm.base
 
+import cc.popkorn.annotations.Exclude
+import cc.popkorn.annotations.Injectable
+import cc.popkorn.core.Scope
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-open class BaseUseCaseExecutor(
-    var coroutineScope: CoroutineScope
-) {
+@Injectable(Scope.BY_USE)
+open class BaseUseCaseExecutor() {
     private val logger = Logger("BaseUseCaseExecutor")
+    private val coroutineScope = CoroutineScope(Job())
 
     open fun <O> execute(
         useCase: UseCase<Unit, O>,
@@ -62,6 +65,7 @@ open class BaseUseCaseExecutor(
     }
 }
 
+@Exclude
 interface UseCase<I, O> {
     suspend fun execute(input: I, callback: (O) -> Unit)
 

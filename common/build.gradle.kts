@@ -1,11 +1,11 @@
 plugins {
     kotlin(KotlinPlugins.multiplatform)
     kotlin(KotlinPlugins.cocoapods)
+    kotlin(KotlinPlugins.kapt)
     kotlin(KotlinPlugins.serialization) version Kotlin.version
     id(Plugins.androidLibrary)
     id(Plugins.sqlDelight)
     id(Plugins.mokoKswift)
-    id(Di.dikt) version Di.diKtVersion
 }
 
 version = "1.0"
@@ -32,6 +32,9 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
+            configurations["kapt"].dependencies.add(project.dependencies.create(Di.popKornCompiler))
+            kotlin.srcDir("build/generated/source/kaptKotlin")
+
             dependencies {
                 implementation(Ktor.auth)
                 implementation(Ktor.clientSerialization)
@@ -42,6 +45,10 @@ kotlin {
                 api(Moko.mvvmFlow)
 
                 implementation(SQLDelight.runtime)
+
+                implementation(Di.popKorn)
+
+                implementation("androidx.startup:startup-runtime:1.1.1")
             }
         }
         val commonTest by getting {
