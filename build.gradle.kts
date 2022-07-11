@@ -12,7 +12,6 @@ buildscript {
             classpath(kotlinGradlePlugin)
             classpath(buildTools)
             classpath(sqlDelightGradlePlugin)
-            classpath(hiltGradlePlugin)
             classpath(remalGradlePlugin)
             classpath(mokoKSwiftGradlePlugin)
         }

@@ -1,5 +1,7 @@
 object Di {
 
-    const val diKtVersion = "1.0.0-alpha9"
-    const val dikt = "io.github.sergeshustoff.dikt"
+    const val popKornVersion = "2.2.0"
+
+    const val popKorn = "cc.popkorn:popkorn:$popKornVersion"
+    const val popKornCompiler = "cc.popkorn:popkorn-compiler:$popKornVersion"
 }

@@ -6,8 +6,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.teewhy.food2forkkmm.android.ui.recipe_detail.RecipeDetailScreen
-import com.teewhy.food2forkkmm.android.ui.recipe_list.RecipeListScreen
+import com.teewhy.food2forkkmm.android.ui.recipedetail.RecipeDetailScreen
+import com.teewhy.food2forkkmm.android.ui.recipelist.RecipeListScreen
 
 @Composable
 fun Navigation() {
