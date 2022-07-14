@@ -11,8 +11,8 @@ android {
 
     defaultConfig {
         applicationId = Application.appId
-        targetSdk = Application.targetSdk
         minSdk = Application.minSdk
+        targetSdk = Application.targetSdk
         versionCode = Application.versionCode
         versionName = Application.versionName
     }
@@ -35,6 +35,12 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Compose.composeVersion
     }
+
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        kotlinOptions {
+            freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn")
+        }
+    }
 }
 
 // Allow references to generated code
@@ -47,17 +53,20 @@ dependencies {
 
     implementation(AndroidX.appCompat)
 
+    implementation(Coil.coilCompose)
+
     implementation(Compose.activity)
     implementation(Compose.runtime)
     implementation(Compose.runtimeLiveData)
-    implementation(Compose.ui)
     implementation(Compose.material)
     implementation(Compose.uiTooling)
     implementation(Compose.foundation)
     implementation(Compose.compiler)
     implementation(Compose.constraintLayout)
     implementation(Compose.navigation)
+    implementation(Compose.ui)
     implementation(Compose.viewmodel)
+    implementation(Compose.windowSize)
 
     implementation(Di.popKorn)
 

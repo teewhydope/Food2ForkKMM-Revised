@@ -4,14 +4,19 @@ import cc.popkorn.annotations.Exclude
 import cc.popkorn.annotations.Injectable
 import cc.popkorn.core.Scope
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
 @Injectable(Scope.BY_USE)
 open class BaseUseCaseExecutor() {
     private val logger = Logger("BaseUseCaseExecutor")
-    private val coroutineScope = CoroutineScope(Job())
+    private val handler = CoroutineExceptionHandler { _, throwable ->
+        logger.log(throwable.message ?: "Unknown Error")
+    }
+    private val coroutineScope = CoroutineScope(SupervisorJob() + handler)
 
     open fun <O> execute(
         useCase: UseCase<Unit, O>,
