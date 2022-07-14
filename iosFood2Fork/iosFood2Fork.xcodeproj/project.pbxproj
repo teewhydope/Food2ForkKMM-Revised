@@ -273,6 +273,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -327,6 +328,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -341,11 +343,13 @@
 				DEVELOPMENT_TEAM = 2JYB63Z67A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosFood2Fork/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosFood2Fork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teewhy.food2forkkmm.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,11 +366,13 @@
 				DEVELOPMENT_TEAM = 2JYB63Z67A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iosFood2Fork/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.iosFood2Fork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teewhy.food2forkkmm.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

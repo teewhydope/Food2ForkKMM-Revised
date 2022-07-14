@@ -14,9 +14,11 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Screen.RecipeList.route) {
         composable(route = Screen.RecipeList.route) {
-            RecipeListScreen(onSelectedRecipe = { recipeId ->
-                navController.navigate(Screen.RecipeDetail.route + "/$recipeId")
-            })
+            RecipeListScreen(
+                onClickRecipeListItem = { recipeId ->
+                    navController.navigate(Screen.RecipeDetail.route + "/$recipeId")
+                }
+            )
         }
         composable(
             route = Screen.RecipeDetail.route + "/{recipeId}",

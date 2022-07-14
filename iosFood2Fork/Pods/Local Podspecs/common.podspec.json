@@ -13,7 +13,7 @@
   "libraries": "c++",
   "module_name": "common_umbrella",
   "platforms": {
-    "ios": "15.0"
+    "ios": "16.0"
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":common",

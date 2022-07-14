@@ -7,9 +7,9 @@ import com.teewhy.food2forkkmm.data.local.mapper.RecipeDataToDataBaseMapper
 import com.teewhy.food2forkkmm.data.recipedetail.model.RecipeDataModel
 
 @Injectable(Scope.BY_USE)
-class RecipeCacheImpl(
-    private val databaseDriverFactory: DriverFactory
-) : RecipeCache {
+class RecipeLocalDataSourceImpl(
+    databaseDriverFactory: DriverFactory
+) : RecipeLocalDataSource {
 
     private val recipeDataBase = RecipeDataBase(databaseDriverFactory.createDriver())
 
@@ -41,8 +41,8 @@ class RecipeCacheImpl(
         ).executeAsList().toRecipeList()
     }
 
-    override fun get(recipeId: Int): RecipeDataModel? {
-        return queries.getRecipeById(id = recipeId.toLong()).executeAsOneOrNull()?.toRecipe()
+    override fun get(recipeId: Int): RecipeDataModel {
+        return queries.getRecipeById(id = recipeId.toLong()).executeAsOne().toRecipe()
     }
 
     fun List<Recipe_Entity>.toRecipeList(): List<RecipeDataModel> {

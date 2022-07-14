@@ -15,7 +15,7 @@ object Compose {
     const val constraintLayout =
         "androidx.constraintlayout:constraintlayout-compose:$constraintLayoutComposeVersion"
 
-    private const val composeActivitiesVersion = "1.6.0-alpha05"
+    private const val composeActivitiesVersion = "1.5.0"
     const val activity = "androidx.activity:activity-compose:$composeActivitiesVersion"
 
     private const val composeNavigationVersion = "2.5.0"
@@ -23,4 +23,8 @@ object Compose {
 
     private const val viewmodelVersion = "2.6.0-alpha01"
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-compose:$viewmodelVersion"
+
+    private const val windowSizeVersion = "1.0.0-alpha10"
+    const val windowSize =
+        "androidx.compose.material3:material3-window-size-class:$windowSizeVersion"
 }
