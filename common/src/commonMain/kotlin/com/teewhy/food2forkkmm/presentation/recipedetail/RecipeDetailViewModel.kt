@@ -19,7 +19,7 @@ class RecipeDetailViewModel : ViewModel() {
         MutableStateFlow(RecipePresentationModel())
     val recipe: CStateFlow<RecipePresentationModel> = _recipe.cStateFlow()
 
-    fun getRecipe(recipeId: Int) {
+    fun fetchSingleRecipe(recipeId: Int) {
         useCaseExecutor.execute(
             useCase = getRecipeUseCase,
             value = recipeId,

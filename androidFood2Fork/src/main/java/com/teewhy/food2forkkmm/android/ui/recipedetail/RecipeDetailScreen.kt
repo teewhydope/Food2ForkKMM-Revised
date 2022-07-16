@@ -22,7 +22,7 @@ fun RecipeDetailScreen(
     val viewModel: RecipeDetailViewModel = viewModel()
 
     LaunchedEffect(Unit) {
-        recipeId?.let { viewModel.getRecipe(it) }
+        recipeId?.let { viewModel.fetchSingleRecipe(it) }
     }
     val recipeList by viewModel.recipe.collectAsState()
 
