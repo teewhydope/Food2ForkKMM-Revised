@@ -11,7 +11,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
 @Injectable(Scope.BY_USE)
-open class BaseUseCaseExecutor() {
+open class BaseUseCaseExecutor {
     private val logger = Logger("BaseUseCaseExecutor")
     private val handler = CoroutineExceptionHandler { _, throwable ->
         logger.log(throwable.message ?: "Unknown Error")

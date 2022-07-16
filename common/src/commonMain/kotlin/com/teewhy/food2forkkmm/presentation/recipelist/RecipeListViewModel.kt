@@ -5,7 +5,6 @@ import com.teewhy.food2forkkmm.base.BaseUseCaseExecutor
 import com.teewhy.food2forkkmm.domain.model.RecipeListRequestDomainModel
 import com.teewhy.food2forkkmm.domain.usecase.GetRecipeListUseCase
 import com.teewhy.food2forkkmm.presentation.recipedetail.mapper.RecipeDomainToPresentationMapper
-import com.teewhy.food2forkkmm.presentation.recipedetail.model.RecipePresentationModel
 import com.teewhy.food2forkkmm.presentation.recipelist.mapper.RecipeListDomainToPresentationMapper
 import com.teewhy.food2forkkmm.presentation.recipelist.mapper.RecipeListDomainToPresentationMapper.MapperInput
 import com.teewhy.food2forkkmm.presentation.recipelist.model.FoodCategory
@@ -21,22 +20,15 @@ class RecipeListViewModel : ViewModel() {
     private val recipeDomainToPresentationMapper = RecipeDomainToPresentationMapper()
     private val recipeListDomainToPresentationMapper = RecipeListDomainToPresentationMapper()
 
-    private val _isLoading: MutableStateFlow<Boolean> = MutableStateFlow(false)
-    val isLoading: CStateFlow<Boolean> = _isLoading.cStateFlow()
-
-    private val _recipeList: MutableStateFlow<List<RecipePresentationModel>> =
-        MutableStateFlow(listOf())
-    val recipeList: CStateFlow<List<RecipePresentationModel>> = _recipeList.cStateFlow()
-
     private val _state: MutableStateFlow<RecipeListState> = MutableStateFlow(RecipeListState())
     val state: CStateFlow<RecipeListState> = _state.cStateFlow()
 
     init {
-        getRecipeList()
+        fetchRecipes()
     }
 
-    private fun getRecipeList() {
-        _isLoading.value = true
+    private fun fetchRecipes() {
+        _state.value = state.value.copy(isLoading = true)
         useCaseExecutor.execute(
             useCase = getRecipeListUseCase,
             value = RecipeListRequestDomainModel(
@@ -53,9 +45,8 @@ class RecipeListViewModel : ViewModel() {
                         }
                     )
                 )
-
-                _recipeList.value = recipeList.results.toList()
-                _isLoading.value = false
+                _state.value = state.value.copy(recipes = recipeList.results.toList())
+                _state.value = state.value.copy(isLoading = false)
             },
             error = {}
         )
@@ -68,7 +59,7 @@ class RecipeListViewModel : ViewModel() {
      */
     fun newSearch() {
         _state.value = state.value.copy(page = 1, recipes = listOf())
-        getRecipeList()
+        fetchRecipes()
     }
 
     /**

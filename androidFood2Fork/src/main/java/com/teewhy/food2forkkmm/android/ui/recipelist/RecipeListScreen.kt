@@ -30,12 +30,10 @@ import com.teewhy.food2forkkmm.presentation.recipelist.model.FoodCategoryUtil
 @Composable
 fun RecipeListScreen(onClickRecipeListItem: (Int) -> Unit) {
     val viewModel: RecipeListViewModel = viewModel()
-    val isLoading: Boolean by viewModel.isLoading.collectAsState()
-    val recipeList by viewModel.recipeList.collectAsState()
 
     val state by viewModel.state.collectAsState()
 
-    Theme(displayProgressBar = isLoading) {
+    Theme(displayProgressBar = state.isLoading) {
         val foodCategories = remember { FoodCategoryUtil().getAllFoodCategories() }
         Scaffold(
             topBar = {
@@ -60,7 +58,7 @@ fun RecipeListScreen(onClickRecipeListItem: (Int) -> Unit) {
                 Modifier.fillMaxSize().background(MaterialTheme.colors.background),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                itemsIndexed(items = recipeList) { index, recipe ->
+                itemsIndexed(items = state.recipes) { index, recipe ->
                     RecipeListItemView(
                         recipe = recipe,
                         onClickRecipeListItem = onClickRecipeListItem
