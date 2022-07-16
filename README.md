@@ -1,4 +1,4 @@
-# Food2ForkKMM-Revised
+# A revised version of the popular [Food2Fork App](https://github.com/mitchtabian/Food2Fork-KMM) by [@mitchtabian](https://github.com/mitchtabian)
 
    Moko-MVvvm for SharedViewModel
    
