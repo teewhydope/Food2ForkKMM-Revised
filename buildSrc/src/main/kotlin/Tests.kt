@@ -1,6 +1,6 @@
 object Tests {
 
-    private const val junitVersion = "4.13.2"
+    private const val junitVersion = "5.8.2"
     const val junit = "junit:junit:$junitVersion"
 
     private const val junitExtVersion = "1.1.3"
@@ -8,4 +8,7 @@ object Tests {
 
     private const val espressoVersion = "3.4.0"
     const val espresso = "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    private const val mockitoVersion = "4.0.0"
+    const val mockito = "org.mockito.kotlin:mockito-kotlin:$mockitoVersion"
 }

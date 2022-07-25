@@ -1,7 +1,7 @@
 package com.teewhy.food2forkkmm.base
 
 expect class Logger(
-    className: String,
+    className: String
 ) {
     fun log(msg: String)
 }
